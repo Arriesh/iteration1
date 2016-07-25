@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/
             <flow-ref name="GlobalExceptionHandlingSub_Flow" doc:name=""/>
 
         </catch-exception-strategy>
-    </choice-exception-strategy>
+    </choice-exception-strategy> 
     <sub-flow name="GlobalExceptionHandlingSub_Flow">
         <mulexml:object-to-xml-transformer doc:name="Object to XML"/>
         <dw:transform-message metadata:id="36479cd4-b5c7-4e3a-9b21-a57aeec724d5" doc:name="Transform Message">
