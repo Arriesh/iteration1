@@ -1,0 +1,2188 @@
+<metadata__cache__entry>
+  <version>5.2.0.0</version>
+  <connectorName>Web_Service_Consumer</connectorName>
+  <metadataIo class="tree-map">
+    <entry>
+      <string>DoGetAddress</string>
+      <map>
+        <entry>
+          <string>__default__</string>
+          <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
+            <input class="org.mule.common.metadata.DefaultMetaData">
+              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
+                <connectorName>Web_Service_Consumer</connectorName>
+                <typeId>QAGetAddress</typeId>
+                <category>DEFAULT</category>
+              </payload>
+              <properties>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>soap.query_header</name>
+                        <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                          <dataType>XML</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <fields>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:QAAuthentication</name>
+                              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                                <dataType>XML</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                        <localPart>QAAuthentication</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                                <fields>
+                                  <org.mule.common.metadata.DefaultMetaDataField>
+                                    <name>ns0:Username</name>
+                                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                      <dataType>STRING</dataType>
+                                      <metaDataModelPropertiesManager>
+                                        <properties>
+                                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                            <typeQName>
+                                              <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                              <localPart>string</localPart>
+                                              <prefix></prefix>
+                                            </typeQName>
+                                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        </properties>
+                                      </metaDataModelPropertiesManager>
+                                    </model>
+                                    <accessType>READ_WRITE</accessType>
+                                    <metaDataFieldPropertyManager>
+                                      <properties>
+                                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                          <name>
+                                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                            <localPart>Username</localPart>
+                                            <prefix>ns0</prefix>
+                                          </name>
+                                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      </properties>
+                                    </metaDataFieldPropertyManager>
+                                  </org.mule.common.metadata.DefaultMetaDataField>
+                                  <org.mule.common.metadata.DefaultMetaDataField>
+                                    <name>ns0:Password</name>
+                                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                      <dataType>STRING</dataType>
+                                      <metaDataModelPropertiesManager>
+                                        <properties>
+                                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                            <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        </properties>
+                                      </metaDataModelPropertiesManager>
+                                    </model>
+                                    <accessType>READ_WRITE</accessType>
+                                    <metaDataFieldPropertyManager>
+                                      <properties>
+                                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                          <name>
+                                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                            <localPart>Password</localPart>
+                                            <prefix>ns0</prefix>
+                                          </name>
+                                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      </properties>
+                                    </metaDataFieldPropertyManager>
+                                  </org.mule.common.metadata.DefaultMetaDataField>
+                                </fields>
+                                <rootElement>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix>ns0</prefix>
+                                </rootElement>
+                                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                                  <schemas>
+                                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:qas=&quot;http://www.qas.com/OnDemand-2011-03&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsse=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.qas.com/OnDemand-2011-03&quot;&gt;&#xd;
+            &lt;xs:import namespace=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; schemaLocation=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAAuthentication&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Username&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Password&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAAuthentication&quot; type=&quot;qas:QAAuthentication&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAQueryHeader&quot;&gt;&#xd;
+                &lt;xs:sequence maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot;&gt;&#xd;
+                    &lt;xs:element name=&quot;QAAuthentication&quot; type=&quot;qas:QAAuthentication&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Security&quot; type=&quot;wsse:SecurityHeaderType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAQueryHeader&quot; type=&quot;qas:QAQueryHeader&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAInformation&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;StateTransition&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;CreditsUsed&quot; type=&quot;xs:long&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAInformation&quot; type=&quot;qas:QAInformation&quot;/&gt;&#xd;
+            &lt;xs:simpleType name=&quot;RequestTagType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTagType defines a transaction(s) identifier&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:pattern value=&quot;abc&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QASearch&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearch defines a search request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country : The country dataset to use&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Engine : The search engine to use, and any engine specific configuration settings&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout : The layout to use when creating a formatted address (required by verification engine only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Search : The actual search string&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FormattedAddressInPicklist: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Search&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;FormattedAddressInPicklist&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;DataIDType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataIDType defines a data identifier, a 3 charater code&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:pattern value=&quot;abc&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;EngineType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;EngineType specifies the engine to use for a search, and any engine options&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The various attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Flatten       : Whether or not to flatten the picklist returned by the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Intensity     : How hard the search engine will search to get a match&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptSet     : The prompt set to apply to the search string&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Threshold     : The typedown threshold (typedown engine only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout       : The time out period in milliseconds&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:simpleContent&gt;&#xd;
+                    &lt;xs:extension base=&quot;qas:EngineEnumType&quot;&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Flatten&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Intensity&quot; type=&quot;qas:EngineIntensityType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;PromptSet&quot; type=&quot;qas:PromptSetType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Threshold&quot; type=&quot;qas:ThresholdType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Timeout&quot; type=&quot;qas:TimeoutType&quot;/&gt;&#xd;
+                    &lt;/xs:extension&gt;&#xd;
+                &lt;/xs:simpleContent&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;EngineEnumType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available engines&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Singleline&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Typedown&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Verification&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Keyfinder&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Intuitive&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;ThresholdType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The picklist threshold - the maximum size of the picklist&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:positiveInteger&quot;&gt;&#xd;
+                    &lt;xs:minInclusive value=&quot;5&quot;/&gt;&#xd;
+                    &lt;xs:maxInclusive value=&quot;750&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;EngineIntensityType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available searching intensity levels&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Exact&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Close&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Extensive&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;TimeoutType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The server searching timeout - how long before a search is aborted (milliseconds)&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:nonNegativeInteger&quot;&gt;&#xd;
+                    &lt;xs:minInclusive value=&quot;0&quot;/&gt;&#xd;
+                    &lt;xs:maxInclusive value=&quot;600000&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;PromptSetType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available prompt sets&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;OneLine&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Default&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Generic&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Optimal&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate2&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate3&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QASearchResult&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearchResult describes the results of a search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPicklist  : The picklist produced by the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;&#xd;
+                QAAddress   : A formatted address produced by the search.&#xd;
+                Note that only the verification engine will ever produce a formatted address.&#xd;
+                Other engines will only ever produce a picklist.&#xd;
+              &lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;VerificationFlags   : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;&#xd;
+                The VerifyLevel attribute specifies the level to which the verification engine has&#xd;
+                verified the input address. It can be ignored when using all other engines.&#xd;
+              &lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAPicklist&quot; type=&quot;qas:QAPicklistType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;VerificationFlags&quot; type=&quot;qas:VerificationFlagsType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute default=&quot;None&quot; name=&quot;VerifyLevel&quot; type=&quot;qas:VerifyLevelType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;VerifyLevelType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The possible verification levels&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Verified&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;InteractionRequired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;PremisesPartial&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;StreetPartial&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Multiple&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;VerifiedPlace&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;VerifiedStreet&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QARefine&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QARefine defines a refinement request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker    : The Search Point Moniker to refine&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Refinement : The refinement text&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout     : The layout to use when creating a formatted address (used in certain scenarios for formatting picklist text)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FormattedAddressInPicklist: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Threshold  : The picklist threshold (i.e. the maximum size of the picklist)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout    : The timeout period in milliseconds&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Refinement&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;FormattedAddressInPicklist&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Threshold&quot; type=&quot;qas:ThresholdType&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Timeout&quot; type=&quot;qas:TimeoutType&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;Picklist&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;Picklist describes a returned picklist&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;QAPicklist&quot; type=&quot;qas:QAPicklistType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAPicklistType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPicklistType describes a picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FullPicklistMoniker : The Search Point Moniker that describes the entire picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PicklistEntry       : The actual picklist entries&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Prompt              : The prompt to display to the user, indicating what information they should enter next&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Total               : The total number of available results&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoFormatSafe      : It is suggested that you immediately format the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoFormatPastClose : There is only one exact match, so you may want immediately to format the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoStepInSafe      : It is suggested that you immediately step-in to the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoStepInPastClose : There is only one exact match, so you may want immediately to step-in to the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LargePotential      : Potentially, there are too many results to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MaxMatches          : The number of results exceeded the maximum allowed&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MoreOtherMatches    : There are additional matches that can be displayed&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;OverThreshold       : There are more picklist items than the threshold value&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout             : The search/refinement timed out&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;FullPicklistMoniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;PicklistEntry&quot; type=&quot;qas:PicklistEntryType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Prompt&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Total&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoFormatSafe&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoFormatPastClose&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoStepinSafe&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoStepinPastClose&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;LargePotential&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MaxMatches&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MoreOtherMatches&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;OverThreshold&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Timeout&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:complexType name=&quot;PicklistEntryType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;PicklistEntryType describes an entry in a picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker        : The Search Point Moniker that represents this picklist entry&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PartialAddress : The full details of the address captured so far&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Picklist       : The picklist text to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Postcode       : The postcode to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Score          : The percentage score assigned to the match&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAAddress      : The Full Address for the moniker&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FullAddress         : This picklist entry is a full deliverable address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Multiples           : This entry represents multiple address lines&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;CanStep             : This entry can be stepped into&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AliasMatch          : This match is an alias&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PostcodeRecoded     : This entry has a recoded postcode&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;CrossBorderMatch    : This entry represents a nearby area, outside the strict initial boundaries of the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DummyPOBox          : This entry is the dummy PO Box entry&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name                : This entry is a Names result&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Information         : This entry is an informational prompt&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarnInformation     : This entry is a warning informational prompt&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;IncompleteAddr      : This entry is the dummy item (for premise-less countries)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;UnresolvableRange   : This entry is a static range item that cannot be expanded&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PhantomPrimaryPoint : This entry is a Phantom Primary Point (AUS only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;SubsidiaryData      : This entry is from the subsidiary rather than the base dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ExtendedData        : This entry is from the base dataset but extended by the subsidiary dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;EnhancedData        : This entry is from the base dataset but enhanced by the subsidiary data set&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;PartialAddress&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Picklist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Postcode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Score&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;FullAddress&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Multiples&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;CanStep&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AliasMatch&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;PostcodeRecoded&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;CrossBorderMatch&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;DummyPOBox&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Name&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Information&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;WarnInformation&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;IncompleteAddr&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;UnresolvableRange&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;PhantomPrimaryPoint&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;SubsidiaryData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;ExtendedData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;EnhancedData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetAddress&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetAddress defines a request for a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout to use&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker  : The Search Point Moniker of the picklist entry to format&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;Address&quot;&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAAddressType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAAddressType describes a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AddressLine  : The individual lines of the address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Overflow   : There are not enough address lines configured to display the whole address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Truncated  : Truncation has occurred on one or more address lines&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DPVStatus : DPV Status for the Address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MissingSubPremise: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;AddressLine&quot; type=&quot;qas:AddressLineType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Overflow&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Truncated&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute name=&quot;DPVStatus&quot; type=&quot;qas:DPVStatusType&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MissingSubPremise&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:annotation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVStatusType specifies the DPVStatus for an Address&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;The various attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVNotConfigured : DPV has not been configured in the Layout&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfigured : DPV has been configured in the Layout&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfirmed : The Address is DPV Confirmed&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfirmedMissingSec : The Address is DPV Confirmed but has Missing or Incorrect secondary information&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVNotConfirmed : The Address is NOT DPV Confirmed&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVLocked : DPV Address Detail Retrieval is Locked&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVSeedHit : The Address is a DPV Seed&lt;/xs:documentation&gt;&#xd;
+            &lt;/xs:annotation&gt;&#xd;
+            &lt;xs:simpleType name=&quot;DPVStatusType&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVNotConfigured&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfigured&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfirmed&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfirmedMissingSec&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVNotConfirmed&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVLocked&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVSeedHit&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;AddressLineType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;AddressLineType describes one line of a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Label  : The name of any address element fixed to this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Line   : The formatted address line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataplusGroup: DataPlus groups associated with this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LineContent      : The type of data on this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Overflow         : Some address elements were lost from this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Truncated        : Truncation occurred on this line&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Label&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Line&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;DataplusGroup&quot; type=&quot;qas:DataplusGroupType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;Address&quot; name=&quot;LineContent&quot; type=&quot;qas:LineContentType&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Overflow&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Truncated&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:complexType name=&quot;DataplusGroupType&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;1&quot; name=&quot;DataplusGroupItem&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute name=&quot;GroupName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;LineContentType&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Address&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Name&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Ancillary&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataPlus&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QAData&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAData describes all of the datasets that are available&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataSet : Details of a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;DataSet&quot; type=&quot;qas:QADataSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QADataSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QADataSet describes a dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ID    : Three letter dataset ID&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name  : Full name of dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;ID&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Name&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetData&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetData defines a data for GetData message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetLicenseInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetLicenseInfo defines a data for the GetLicenseInfo message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetSystemInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetSystemInfo a data for the GetSystemInfo message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetDataMapDetail&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetDataMapDetail describes a request for data map detail information&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;DataMap&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QADataMapDetail&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QADataMapDetail contains details of all datasets in a given data map&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;LicensedSet&quot; type=&quot;qas:QALicensedSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QALicenceInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALicenceInfo describes all of the licence information for each dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarningLevel  : Warning level for the set of licensed data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LicensedSet   : Details of a licensed dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;LicensedSet&quot; type=&quot;qas:QALicensedSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;LicenceWarningLevel&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataExpiring&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;LicenceExpiring&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;ClicksLow&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Evaluation&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;NoClicks&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;EvalLicenceExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;FullLicenceExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;LicenceNotFound&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataUnreadable&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;QALicensedSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALicensedSet describes a licensed dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ID              : Dataset ID&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Description     : Full description of dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Copyright       : Copyright information&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Version         : Version of the data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;BaseCountry     : Data ID of the country to which this dataset is an extension&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Status          : A string describing the state of the data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Server          : The name of the server where the dataset is being used&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarningLevel    : The warning level for the dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DaysLeft        : The number of days before the dataset is unusable&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DaysLeft        : The number of days before the dataset is unusable&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LicenceDaysLeft : The number of days before the licence expires&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;ID&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Description&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Copyright&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Version&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;BaseCountry&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Status&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Server&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;DaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;DataDaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;LicenceDaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QASystemInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASystemInfo describes the current state of the system&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;SystemInfo&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetExampleAddresses&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetExampleAddresses defines a request for the example addresses for a given dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country  : The country dataset to get example addresses for&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout to use to format the example addresses&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAExampleAddresses&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAExampleAddresses describes all of the example addresses for a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ExampleAddress&quot; type=&quot;qas:QAExampleAddress&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAExampleAddress&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAExampleAddress describes an example address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Address  : The formatted example address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Comment  : A comment describing the address&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Address&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetLayouts&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetLayouts defines a request for a list of all the available layouts&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country   : The country dataset to get layouts for&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QALayouts&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALayouts describes all the available layouts for a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;qas:QALayout&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QALayout&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALayout describes a layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name     : The name of the layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Comment  : A comment describing the layout&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Name&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetPromptSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetPromptSet defines a request for details of a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country   : The country dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptSet : The prompt set to get details of&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;PromptSet&quot; type=&quot;qas:PromptSetType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAPromptSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPromptSet describes a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child element:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Line : Describes one line of the prompt set&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Line&quot; type=&quot;qas:PromptLine&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute default=&quot;false&quot; name=&quot;Dynamic&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;PromptLine&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptLine describes a line of a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Prompt               : The prompt to display to the user&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;SuggestedInputLength : The suggested length of the input buffer&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Example              : An example of possible input&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Prompt&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;SuggestedInputLength&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Example&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QACanSearch&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QACanSearch returns a boolean specifying whether a search is possible for a&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;specific country, engine and layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country  : The country dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Engine   : The search engine to use, and any engine specific configuration settings&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout with which to format the address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation/&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QASearchOk&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearchOK is the response from a CanSearch operation.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;IsOk        : Boolean stating whether searching is available&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorCode   : The QAS error code returned&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorMesage : A textual description of the error&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorDetail : Detailed error history&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;IsOk&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;ErrorCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;ErrorMessage&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ErrorDetail&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:annotation&gt;&#xd;
+                &lt;xs:documentation&gt; Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+            &lt;/xs:annotation&gt;&#xd;
+            &lt;xs:complexType name=&quot;VerificationFlagsType&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;BldgFirmNameChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PrimaryNumberChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;StreetCorrected&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;RuralRteHighwayContractMatched&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;CityNameChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;CityAliasMatched&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;StateProvinceChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PostCodeCorrected&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;SecondaryNumRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;IdenPreStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;GenPreStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PostStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+        &lt;/xs:schema&gt;</string>
+                                  </schemas>
+                                  <encoding>windows-1252</encoding>
+                                </schemas>
+                                <namespaceManager>
+                                  <namespacePrefix>
+                                    <entry>
+                                      <string>http://www.qas.com/OnDemand-2011-03</string>
+                                      <string>ns0</string>
+                                    </entry>
+                                  </namespacePrefix>
+                                </namespaceManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>QAAuthentication</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:Security</name>
+                              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                                <dataType>XML</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd</namespaceURI>
+                                        <localPart>SecurityHeaderType</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                                <fields/>
+                                <rootElement>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix>ns0</prefix>
+                                </rootElement>
+                                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../../../org.mule.common.metadata.DefaultMetaDataField/model/schemas"/>
+                                <namespaceManager reference="../../../org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>Security</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                          </fields>
+                          <rootElement>
+                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                            <localPart>QAQueryHeader</localPart>
+                            <prefix>ns0</prefix>
+                          </rootElement>
+                          <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                            <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+                            <encoding reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/encoding"/>
+                          </schemas>
+                          <namespaceManager>
+                            <namespacePrefix>
+                              <entry>
+                                <string>http://www.qas.com/OnDemand-2011-03</string>
+                                <string>ns0</string>
+                              </entry>
+                            </namespacePrefix>
+                          </namespaceManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties/>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+              </properties>
+            </input>
+            <output class="org.mule.common.metadata.DefaultMetaData">
+              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
+                <connectorName>Web_Service_Consumer</connectorName>
+                <typeId>Address</typeId>
+                <category>DEFAULT</category>
+              </payload>
+              <properties>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>soap.information_header</name>
+                        <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                          <dataType>XML</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAInformation</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <fields>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:StateTransition</name>
+                              <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                <dataType>STRING</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName reference="../../../../../../../../../../../../../../input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>StateTransition</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:CreditsUsed</name>
+                              <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                <dataType>LONG</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                        <localPart>long</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>CreditsUsed</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                          </fields>
+                          <rootElement>
+                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                            <localPart>QAInformation</localPart>
+                            <prefix>ns0</prefix>
+                          </rootElement>
+                          <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                            <schemas reference="../../../../../../../../../input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+                            <encoding reference="../../../../../../../../../input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/encoding"/>
+                          </schemas>
+                          <namespaceManager>
+                            <namespacePrefix>
+                              <entry>
+                                <string>http://www.qas.com/OnDemand-2011-03</string>
+                                <string>ns0</string>
+                              </entry>
+                            </namespacePrefix>
+                          </namespaceManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties/>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+              </properties>
+            </output>
+          </org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
+        </entry>
+      </map>
+    </entry>
+    <entry>
+      <string>DoSearch</string>
+      <map>
+        <entry>
+          <string>__default__</string>
+          <org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
+            <input class="org.mule.common.metadata.DefaultMetaData">
+              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
+                <connectorName>Web_Service_Consumer</connectorName>
+                <typeId>QASearch</typeId>
+                <category>DEFAULT</category>
+              </payload>
+              <properties>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>soap.query_header</name>
+                        <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                          <dataType>XML</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <fields>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:QAAuthentication</name>
+                              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                                <dataType>XML</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                        <localPart>QAAuthentication</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                                <fields>
+                                  <org.mule.common.metadata.DefaultMetaDataField>
+                                    <name>ns0:Username</name>
+                                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                      <dataType>STRING</dataType>
+                                      <metaDataModelPropertiesManager>
+                                        <properties>
+                                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                            <typeQName>
+                                              <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                              <localPart>string</localPart>
+                                              <prefix></prefix>
+                                            </typeQName>
+                                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        </properties>
+                                      </metaDataModelPropertiesManager>
+                                    </model>
+                                    <accessType>READ_WRITE</accessType>
+                                    <metaDataFieldPropertyManager>
+                                      <properties>
+                                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                          <name>
+                                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                            <localPart>Username</localPart>
+                                            <prefix>ns0</prefix>
+                                          </name>
+                                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      </properties>
+                                    </metaDataFieldPropertyManager>
+                                  </org.mule.common.metadata.DefaultMetaDataField>
+                                  <org.mule.common.metadata.DefaultMetaDataField>
+                                    <name>ns0:Password</name>
+                                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                      <dataType>STRING</dataType>
+                                      <metaDataModelPropertiesManager>
+                                        <properties>
+                                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                            <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                        </properties>
+                                      </metaDataModelPropertiesManager>
+                                    </model>
+                                    <accessType>READ_WRITE</accessType>
+                                    <metaDataFieldPropertyManager>
+                                      <properties>
+                                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                          <name>
+                                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                            <localPart>Password</localPart>
+                                            <prefix>ns0</prefix>
+                                          </name>
+                                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                      </properties>
+                                    </metaDataFieldPropertyManager>
+                                  </org.mule.common.metadata.DefaultMetaDataField>
+                                </fields>
+                                <rootElement>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix>ns0</prefix>
+                                </rootElement>
+                                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                                  <schemas>
+                                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:qas=&quot;http://www.qas.com/OnDemand-2011-03&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:wsse=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.qas.com/OnDemand-2011-03&quot;&gt;&#xd;
+            &lt;xs:import namespace=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot; schemaLocation=&quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAAuthentication&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Username&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;Password&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAAuthentication&quot; type=&quot;qas:QAAuthentication&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAQueryHeader&quot;&gt;&#xd;
+                &lt;xs:sequence maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot;&gt;&#xd;
+                    &lt;xs:element name=&quot;QAAuthentication&quot; type=&quot;qas:QAAuthentication&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Security&quot; type=&quot;wsse:SecurityHeaderType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAQueryHeader&quot; type=&quot;qas:QAQueryHeader&quot;/&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAInformation&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;StateTransition&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;1&quot; minOccurs=&quot;1&quot; name=&quot;CreditsUsed&quot; type=&quot;xs:long&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAInformation&quot; type=&quot;qas:QAInformation&quot;/&gt;&#xd;
+            &lt;xs:simpleType name=&quot;RequestTagType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTagType defines a transaction(s) identifier&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:pattern value=&quot;abc&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QASearch&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearch defines a search request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country : The country dataset to use&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Engine : The search engine to use, and any engine specific configuration settings&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout : The layout to use when creating a formatted address (required by verification engine only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Search : The actual search string&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FormattedAddressInPicklist: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Search&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;FormattedAddressInPicklist&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;DataIDType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataIDType defines a data identifier, a 3 charater code&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:pattern value=&quot;abc&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;EngineType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;EngineType specifies the engine to use for a search, and any engine options&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The various attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Flatten       : Whether or not to flatten the picklist returned by the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Intensity     : How hard the search engine will search to get a match&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptSet     : The prompt set to apply to the search string&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Threshold     : The typedown threshold (typedown engine only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout       : The time out period in milliseconds&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:simpleContent&gt;&#xd;
+                    &lt;xs:extension base=&quot;qas:EngineEnumType&quot;&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Flatten&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Intensity&quot; type=&quot;qas:EngineIntensityType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;PromptSet&quot; type=&quot;qas:PromptSetType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Threshold&quot; type=&quot;qas:ThresholdType&quot;/&gt;&#xd;
+                        &lt;xs:attribute name=&quot;Timeout&quot; type=&quot;qas:TimeoutType&quot;/&gt;&#xd;
+                    &lt;/xs:extension&gt;&#xd;
+                &lt;/xs:simpleContent&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;EngineEnumType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available engines&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Singleline&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Typedown&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Verification&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Keyfinder&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Intuitive&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;ThresholdType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The picklist threshold - the maximum size of the picklist&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:positiveInteger&quot;&gt;&#xd;
+                    &lt;xs:minInclusive value=&quot;5&quot;/&gt;&#xd;
+                    &lt;xs:maxInclusive value=&quot;750&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;EngineIntensityType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available searching intensity levels&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Exact&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Close&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Extensive&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;TimeoutType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The server searching timeout - how long before a search is aborted (milliseconds)&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:nonNegativeInteger&quot;&gt;&#xd;
+                    &lt;xs:minInclusive value=&quot;0&quot;/&gt;&#xd;
+                    &lt;xs:maxInclusive value=&quot;600000&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;PromptSetType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The available prompt sets&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;OneLine&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Default&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Generic&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Optimal&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate2&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Alternate3&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QASearchResult&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearchResult describes the results of a search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPicklist  : The picklist produced by the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;&#xd;
+                QAAddress   : A formatted address produced by the search.&#xd;
+                Note that only the verification engine will ever produce a formatted address.&#xd;
+                Other engines will only ever produce a picklist.&#xd;
+              &lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;VerificationFlags   : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;&#xd;
+                The VerifyLevel attribute specifies the level to which the verification engine has&#xd;
+                verified the input address. It can be ignored when using all other engines.&#xd;
+              &lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAPicklist&quot; type=&quot;qas:QAPicklistType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;VerificationFlags&quot; type=&quot;qas:VerificationFlagsType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute default=&quot;None&quot; name=&quot;VerifyLevel&quot; type=&quot;qas:VerifyLevelType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;VerifyLevelType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;The possible verification levels&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Verified&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;InteractionRequired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;PremisesPartial&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;StreetPartial&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Multiple&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;VerifiedPlace&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;VerifiedStreet&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QARefine&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QARefine defines a refinement request&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker    : The Search Point Moniker to refine&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Refinement : The refinement text&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout     : The layout to use when creating a formatted address (used in certain scenarios for formatting picklist text)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FormattedAddressInPicklist: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Threshold  : The picklist threshold (i.e. the maximum size of the picklist)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout    : The timeout period in milliseconds&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Refinement&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;FormattedAddressInPicklist&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Threshold&quot; type=&quot;qas:ThresholdType&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Timeout&quot; type=&quot;qas:TimeoutType&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;Picklist&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;Picklist describes a returned picklist&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;QAPicklist&quot; type=&quot;qas:QAPicklistType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAPicklistType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPicklistType describes a picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FullPicklistMoniker : The Search Point Moniker that describes the entire picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PicklistEntry       : The actual picklist entries&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Prompt              : The prompt to display to the user, indicating what information they should enter next&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Total               : The total number of available results&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoFormatSafe      : It is suggested that you immediately format the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoFormatPastClose : There is only one exact match, so you may want immediately to format the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoStepInSafe      : It is suggested that you immediately step-in to the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AutoStepInPastClose : There is only one exact match, so you may want immediately to step-in to the first picklist item&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LargePotential      : Potentially, there are too many results to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MaxMatches          : The number of results exceeded the maximum allowed&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MoreOtherMatches    : There are additional matches that can be displayed&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;OverThreshold       : There are more picklist items than the threshold value&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Timeout             : The search/refinement timed out&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;FullPicklistMoniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;PicklistEntry&quot; type=&quot;qas:PicklistEntryType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Prompt&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Total&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoFormatSafe&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoFormatPastClose&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoStepinSafe&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AutoStepinPastClose&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;LargePotential&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MaxMatches&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MoreOtherMatches&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;OverThreshold&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Timeout&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:complexType name=&quot;PicklistEntryType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;PicklistEntryType describes an entry in a picklist&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker        : The Search Point Moniker that represents this picklist entry&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PartialAddress : The full details of the address captured so far&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Picklist       : The picklist text to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Postcode       : The postcode to display&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Score          : The percentage score assigned to the match&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAAddress      : The Full Address for the moniker&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;FullAddress         : This picklist entry is a full deliverable address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Multiples           : This entry represents multiple address lines&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;CanStep             : This entry can be stepped into&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AliasMatch          : This match is an alias&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PostcodeRecoded     : This entry has a recoded postcode&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;CrossBorderMatch    : This entry represents a nearby area, outside the strict initial boundaries of the search&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DummyPOBox          : This entry is the dummy PO Box entry&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name                : This entry is a Names result&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Information         : This entry is an informational prompt&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarnInformation     : This entry is a warning informational prompt&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;IncompleteAddr      : This entry is the dummy item (for premise-less countries)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;UnresolvableRange   : This entry is a static range item that cannot be expanded&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PhantomPrimaryPoint : This entry is a Phantom Primary Point (AUS only)&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;SubsidiaryData      : This entry is from the subsidiary rather than the base dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ExtendedData        : This entry is from the base dataset but extended by the subsidiary dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;EnhancedData        : This entry is from the base dataset but enhanced by the subsidiary data set&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;PartialAddress&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Picklist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Postcode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Score&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;FullAddress&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Multiples&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;CanStep&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;AliasMatch&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;PostcodeRecoded&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;CrossBorderMatch&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;DummyPOBox&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Name&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Information&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;WarnInformation&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;IncompleteAddr&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;UnresolvableRange&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;PhantomPrimaryPoint&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;SubsidiaryData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;ExtendedData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;EnhancedData&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetAddress&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetAddress defines a request for a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout to use&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Moniker  : The Search Point Moniker of the picklist entry to format&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Moniker&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;Address&quot;&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;QAAddress&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAAddressType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAAddressType describes a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;AddressLine  : The individual lines of the address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Overflow   : There are not enough address lines configured to display the whole address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Truncated  : Truncation has occurred on one or more address lines&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DPVStatus : DPV Status for the Address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;MissingSubPremise: Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; name=&quot;AddressLine&quot; type=&quot;qas:AddressLineType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Overflow&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Truncated&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute name=&quot;DPVStatus&quot; type=&quot;qas:DPVStatusType&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;MissingSubPremise&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:annotation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVStatusType specifies the DPVStatus for an Address&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;The various attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVNotConfigured : DPV has not been configured in the Layout&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfigured : DPV has been configured in the Layout&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfirmed : The Address is DPV Confirmed&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVConfirmedMissingSec : The Address is DPV Confirmed but has Missing or Incorrect secondary information&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVNotConfirmed : The Address is NOT DPV Confirmed&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVLocked : DPV Address Detail Retrieval is Locked&lt;/xs:documentation&gt;&#xd;
+                &lt;xs:documentation&gt;DPVSeedHit : The Address is a DPV Seed&lt;/xs:documentation&gt;&#xd;
+            &lt;/xs:annotation&gt;&#xd;
+            &lt;xs:simpleType name=&quot;DPVStatusType&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVNotConfigured&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfigured&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfirmed&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVConfirmedMissingSec&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVNotConfirmed&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVLocked&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DPVSeedHit&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;AddressLineType&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;AddressLineType describes one line of a formatted address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Label  : The name of any address element fixed to this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Line   : The formatted address line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataplusGroup: DataPlus groups associated with this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;The attributes are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LineContent      : The type of data on this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Overflow         : Some address elements were lost from this line&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Truncated        : Truncation occurred on this line&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Label&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Line&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;DataplusGroup&quot; type=&quot;qas:DataplusGroupType&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute default=&quot;Address&quot; name=&quot;LineContent&quot; type=&quot;qas:LineContentType&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Overflow&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;xs:attribute default=&quot;false&quot; name=&quot;Truncated&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:complexType name=&quot;DataplusGroupType&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;1&quot; name=&quot;DataplusGroupItem&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+                &lt;xs:attribute name=&quot;GroupName&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:simpleType name=&quot;LineContentType&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Address&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Name&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Ancillary&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataPlus&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:element name=&quot;QAData&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAData describes all of the datasets that are available&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DataSet : Details of a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;DataSet&quot; type=&quot;qas:QADataSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QADataSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QADataSet describes a dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ID    : Three letter dataset ID&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name  : Full name of dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;ID&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Name&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetData&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetData defines a data for GetData message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetLicenseInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetLicenseInfo defines a data for the GetLicenseInfo message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetSystemInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetSystemInfo a data for the GetSystemInfo message&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetDataMapDetail&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetDataMapDetail describes a request for data map detail information&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;DataMap&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QADataMapDetail&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QADataMapDetail contains details of all datasets in a given data map&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;LicensedSet&quot; type=&quot;qas:QALicensedSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QALicenceInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALicenceInfo describes all of the licence information for each dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarningLevel  : Warning level for the set of licensed data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LicensedSet   : Details of a licensed dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;LicensedSet&quot; type=&quot;qas:QALicensedSet&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:simpleType name=&quot;LicenceWarningLevel&quot;&gt;&#xd;
+                &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;None&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataExpiring&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;LicenceExpiring&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;ClicksLow&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;Evaluation&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;NoClicks&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;EvalLicenceExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;FullLicenceExpired&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;LicenceNotFound&quot;/&gt;&#xd;
+                    &lt;xs:enumeration value=&quot;DataUnreadable&quot;/&gt;&#xd;
+                &lt;/xs:restriction&gt;&#xd;
+            &lt;/xs:simpleType&gt;&#xd;
+            &lt;xs:complexType name=&quot;QALicensedSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALicensedSet describes a licensed dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ID              : Dataset ID&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Description     : Full description of dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Copyright       : Copyright information&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Version         : Version of the data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;BaseCountry     : Data ID of the country to which this dataset is an extension&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Status          : A string describing the state of the data&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Server          : The name of the server where the dataset is being used&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;WarningLevel    : The warning level for the dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DaysLeft        : The number of days before the dataset is unusable&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;DaysLeft        : The number of days before the dataset is unusable&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;LicenceDaysLeft : The number of days before the licence expires&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;ID&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Description&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Copyright&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Version&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;BaseCountry&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Status&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Server&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;WarningLevel&quot; type=&quot;qas:LicenceWarningLevel&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;DaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;DataDaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;LicenceDaysLeft&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QASystemInfo&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASystemInfo describes the current state of the system&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;SystemInfo&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetExampleAddresses&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetExampleAddresses defines a request for the example addresses for a given dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country  : The country dataset to get example addresses for&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout to use to format the example addresses&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;RequestTag : String for marking request&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:attribute name=&quot;RequestTag&quot; type=&quot;qas:RequestTagType&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAExampleAddresses&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAExampleAddresses describes all of the example addresses for a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ExampleAddress&quot; type=&quot;qas:QAExampleAddress&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QAExampleAddress&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAExampleAddress describes an example address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Address  : The formatted example address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Comment  : A comment describing the address&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Address&quot; type=&quot;qas:QAAddressType&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetLayouts&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetLayouts defines a request for a list of all the available layouts&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country   : The country dataset to get layouts for&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QALayouts&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALayouts describes all the available layouts for a dataset&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;qas:QALayout&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;QALayout&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QALayout describes a layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Name     : The name of the layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Comment  : A comment describing the layout&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Name&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Comment&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QAGetPromptSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAGetPromptSet defines a request for details of a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country   : The country dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptSet : The prompt set to get details of&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;PromptSet&quot; type=&quot;qas:PromptSetType&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QAPromptSet&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QAPromptSet describes a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child element:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Line : Describes one line of the prompt set&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Line&quot; type=&quot;qas:PromptLine&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute default=&quot;false&quot; name=&quot;Dynamic&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:complexType name=&quot;PromptLine&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;PromptLine describes a line of a prompt set&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Prompt               : The prompt to display to the user&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;SuggestedInputLength : The suggested length of the input buffer&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Example              : An example of possible input&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element name=&quot;Prompt&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;SuggestedInputLength&quot; type=&quot;xs:nonNegativeInteger&quot;/&gt;&#xd;
+                    &lt;xs:element name=&quot;Example&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+            &lt;xs:element name=&quot;QACanSearch&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QACanSearch returns a boolean specifying whether a search is possible for a&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;specific country, engine and layout&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Country  : The country dataset&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Engine   : The search engine to use, and any engine specific configuration settings&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Layout   : The layout with which to format the address&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Localisation : Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation/&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;Country&quot; type=&quot;qas:DataIDType&quot;/&gt;&#xd;
+                        &lt;xs:element name=&quot;Engine&quot; type=&quot;qas:EngineType&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;Layout&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                    &lt;xs:attribute name=&quot;Localisation&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:element name=&quot;QASearchOk&quot;&gt;&#xd;
+                &lt;xs:annotation&gt;&#xd;
+                    &lt;xs:documentation&gt;QASearchOK is the response from a CanSearch operation.&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;Child elements are as follows:&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;IsOk        : Boolean stating whether searching is available&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorCode   : The QAS error code returned&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorMesage : A textual description of the error&lt;/xs:documentation&gt;&#xd;
+                    &lt;xs:documentation&gt;ErrorDetail : Detailed error history&lt;/xs:documentation&gt;&#xd;
+                &lt;/xs:annotation&gt;&#xd;
+                &lt;xs:complexType&gt;&#xd;
+                    &lt;xs:sequence&gt;&#xd;
+                        &lt;xs:element name=&quot;IsOk&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;ErrorCode&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element minOccurs=&quot;0&quot; name=&quot;ErrorMessage&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                        &lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;ErrorDetail&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+                    &lt;/xs:sequence&gt;&#xd;
+                &lt;/xs:complexType&gt;&#xd;
+            &lt;/xs:element&gt;&#xd;
+            &lt;xs:annotation&gt;&#xd;
+                &lt;xs:documentation&gt; Please refer to the associated Pro On Demand web service documentation for information about this feature.&lt;/xs:documentation&gt;&#xd;
+            &lt;/xs:annotation&gt;&#xd;
+            &lt;xs:complexType name=&quot;VerificationFlagsType&quot;&gt;&#xd;
+                &lt;xs:sequence&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;BldgFirmNameChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PrimaryNumberChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;StreetCorrected&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;RuralRteHighwayContractMatched&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;CityNameChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;CityAliasMatched&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;StateProvinceChanged&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PostCodeCorrected&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;SecondaryNumRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;IdenPreStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;GenPreStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                    &lt;xs:element default=&quot;false&quot; minOccurs=&quot;0&quot; name=&quot;PostStInfoRetained&quot; type=&quot;xs:boolean&quot;/&gt;&#xd;
+                &lt;/xs:sequence&gt;&#xd;
+            &lt;/xs:complexType&gt;&#xd;
+        &lt;/xs:schema&gt;</string>
+                                  </schemas>
+                                  <encoding reference="../../../../../../../../../../../../../../../../entry/map/entry/org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry/input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/encoding"/>
+                                </schemas>
+                                <namespaceManager>
+                                  <namespacePrefix>
+                                    <entry>
+                                      <string>http://www.qas.com/OnDemand-2011-03</string>
+                                      <string>ns0</string>
+                                    </entry>
+                                  </namespacePrefix>
+                                </namespaceManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>QAAuthentication</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:Security</name>
+                              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                                <dataType>XML</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd</namespaceURI>
+                                        <localPart>SecurityHeaderType</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                                <fields/>
+                                <rootElement>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAQueryHeader</localPart>
+                                  <prefix>ns0</prefix>
+                                </rootElement>
+                                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider" reference="../../../org.mule.common.metadata.DefaultMetaDataField/model/schemas"/>
+                                <namespaceManager reference="../../../org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>Security</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                          </fields>
+                          <rootElement>
+                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                            <localPart>QAQueryHeader</localPart>
+                            <prefix>ns0</prefix>
+                          </rootElement>
+                          <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                            <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+                            <encoding reference="../../../../../../../../../../../../../entry/map/entry/org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry/input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/encoding"/>
+                          </schemas>
+                          <namespaceManager>
+                            <namespacePrefix>
+                              <entry>
+                                <string>http://www.qas.com/OnDemand-2011-03</string>
+                                <string>ns0</string>
+                              </entry>
+                            </namespacePrefix>
+                          </namespaceManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties/>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+              </properties>
+            </input>
+            <output class="org.mule.common.metadata.DefaultMetaData">
+              <payload class="org.mule.tooling.metadata.api.TypeRefMetaDataModel">
+                <connectorName>Web_Service_Consumer</connectorName>
+                <typeId>QASearchResult</typeId>
+                <category>DEFAULT</category>
+              </payload>
+              <properties>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>FLOW</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>SESSION</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>OUTBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>RECORD</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields/>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+                <entry>
+                  <org.mule.common.metadata.MetaDataPropertyScope>INBOUND</org.mule.common.metadata.MetaDataPropertyScope>
+                  <org.mule.common.metadata.MetaDataProperties>
+                    <fields>
+                      <org.mule.common.metadata.DefaultMetaDataField>
+                        <name>soap.information_header</name>
+                        <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                          <dataType>XML</dataType>
+                          <metaDataModelPropertiesManager>
+                            <properties>
+                              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                <typeQName>
+                                  <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                  <localPart>QAInformation</localPart>
+                                  <prefix></prefix>
+                                </typeQName>
+                              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            </properties>
+                          </metaDataModelPropertiesManager>
+                          <fields>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:StateTransition</name>
+                              <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                <dataType>STRING</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName reference="../../../../../../../../../../../../../../input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>StateTransition</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                            <org.mule.common.metadata.DefaultMetaDataField>
+                              <name>ns0:CreditsUsed</name>
+                              <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                                <dataType>LONG</dataType>
+                                <metaDataModelPropertiesManager>
+                                  <properties>
+                                    <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                      <typeQName>
+                                        <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                                        <localPart>long</localPart>
+                                        <prefix></prefix>
+                                      </typeQName>
+                                    </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                                  </properties>
+                                </metaDataModelPropertiesManager>
+                              </model>
+                              <accessType>READ_WRITE</accessType>
+                              <metaDataFieldPropertyManager>
+                                <properties>
+                                  <org.mule.common.metadata.property.QNameMetaDataProperty>
+                                    <name>
+                                      <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                                      <localPart>CreditsUsed</localPart>
+                                      <prefix>ns0</prefix>
+                                    </name>
+                                  </org.mule.common.metadata.property.QNameMetaDataProperty>
+                                </properties>
+                              </metaDataFieldPropertyManager>
+                            </org.mule.common.metadata.DefaultMetaDataField>
+                          </fields>
+                          <rootElement>
+                            <namespaceURI>http://www.qas.com/OnDemand-2011-03</namespaceURI>
+                            <localPart>QAInformation</localPart>
+                            <prefix>ns0</prefix>
+                          </rootElement>
+                          <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                            <schemas reference="../../../../../../../../../input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+                            <encoding reference="../../../../../../../../../../../../../entry/map/entry/org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry/input/properties/entry[3]/org.mule.common.metadata.MetaDataProperties/fields/org.mule.common.metadata.DefaultMetaDataField/model/fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/encoding"/>
+                          </schemas>
+                          <namespaceManager>
+                            <namespacePrefix>
+                              <entry>
+                                <string>http://www.qas.com/OnDemand-2011-03</string>
+                                <string>ns0</string>
+                              </entry>
+                            </namespacePrefix>
+                          </namespaceManager>
+                        </model>
+                        <accessType>READ_WRITE</accessType>
+                        <metaDataFieldPropertyManager>
+                          <properties/>
+                        </metaDataFieldPropertyManager>
+                      </org.mule.common.metadata.DefaultMetaDataField>
+                    </fields>
+                  </org.mule.common.metadata.MetaDataProperties>
+                </entry>
+              </properties>
+            </output>
+          </org.mule.tooling.metadata.cache.DefaultMetadataCacheEntry>
+        </entry>
+      </map>
+    </entry>
+  </metadataIo>
+</metadata__cache__entry>

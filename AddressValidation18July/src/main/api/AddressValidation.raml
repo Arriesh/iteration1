@@ -1,0 +1,28 @@
+#%RAML 0.8
+title: Address Validation
+version: v1
+baseUri: http://addressvalidation.cloudhub.io/
+
+/DoSearch:
+  displayName: QADoSearch Object
+  post:
+    body:
+      application/xml:
+        schema: !include schemas/QASearchRequest.xsd
+    responses: 
+      200: 
+       body: 
+         application/xml:
+         
+/DoGetAddress:
+  displayName: QADoGetAddress Object
+  post:
+    body:
+      text/xml:
+       #schema: !include schemas/xml/AddressDetailsRequest.xsd
+    responses: 
+            200: 
+             body: 
+              #text/xml:
+                #schema: !include schemas/xml/AddressDetailsResponse.xsd
+               

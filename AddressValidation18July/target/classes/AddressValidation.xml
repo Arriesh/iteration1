@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:mulexml="http://www.mulesoft.org/schema/mule/xml" xmlns:cxf="http://www.mulesoft.org/schema/mule/cxf" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:cluster="http://www.mulesoft.org/schema/mule/ee/cluster" xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/cxf http://www.mulesoft.org/schema/mule/cxf/current/mule-cxf.xsd
+http://www.mulesoft.org/schema/mule/xml http://www.mulesoft.org/schema/mule/xml/current/mule-xml.xsd">
+    <http:listener-config name="AddressValidation-httpListenerConfig" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
+    <apikit:config name="AddressValidation-config" raml="AddressValidation.raml" consoleEnabled="true" consolePath="console" doc:name="Router"/>
+    <ws:consumer-config name="Web_Service_Consumer" service="QASOnDemandIntermediary" port="QAPortType" serviceAddress="https://ws3.ondemand.qas.com/ProOnDemand/V3/ProOnDemandService.asmx" wsdlLocation="PoD.wsdl" doc:name="Web Service Consumer"/>
+    <spring:beans>
+        <spring:bean id="beanAddressValidationException" name="beanAddressValidationException" class="com.icare.services.exceptions.AddressValidationException"/>
+        <spring:bean id="BeanTestException" name="BeanTestException" class="com.icare.commons.exceptions.TestException"/>
+    </spring:beans>
+    <configuration defaultExceptionStrategy-ref="GlobalExceptionHandlingChoice_Exception_Strategy" doc:name="Configuration">
+        <http:config useTransportForUris="false"/>
+    </configuration>
+
+    <flow name="AddressValidation-main">
+        <http:listener config-ref="AddressValidation-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
+        <apikit:router config-ref="AddressValidation-config" doc:name="APIkit Router"/>
+        <exception-strategy ref="AddressValidation-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="post:/DoSearch:AddressValidation-config">
+        <dw:transform-message metadata:id="57952c5b-9e3a-4cbb-b072-3980f5b5af21" doc:name="Transform Message">
+            <dw:input-payload/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.qas.com/OnDemand-2011-03
+%namespace ns01 http://com.services.icare/QAS
+---
+{
+	ns0#QASearch @(Localisation: payload.ns01#QASearchRequest.@Localisation): {
+		ns0#Country: payload.ns01#QASearchRequest.ns01#Country,
+		ns0#Engine @(Threshold: payload.ns01#QASearchRequest.ns01#Engine.@Threshold): payload.ns01#QASearchRequest.ns01#Engine,
+		ns0#Layout: payload.ns01#QASearchRequest.ns01#Layout,
+		ns0#Search: payload.ns01#QASearchRequest.ns01#Search
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger message="Mapping QAS request to REST service request" level="DEBUG" doc:name="Logger"/>
+        <set-property propertyName="Auth-Token" value="d5c737f7-b5a2-4afe-91f9-a8692183984b" doc:name="Property"/>
+        <logger message="Invoking QAS SOAP service" level="DEBUG" doc:name="Logger"/>
+        <!-- <ws:consumer config-ref="Web_Service_Consumer1" operation="DoSearch" doc:name="Web Service Consumer"/> -->
+        <logger message="Mapping QAS response to REST service response" level="DEBUG" doc:name="Logger"/>
+        <dw:transform-message metadata:id="adf8c6d7-fa56-46e3-a011-8971d7481730" doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://com.services.icare/QASearchResponse
+%namespace ns01 http://www.qas.com/OnDemand-2011-03
+---
+{
+	ns0#QASearchResponse: {
+		
+		ns0#QAPicklist @(MoreOtherMatches: payload.ns01#QASearchResult.ns01#QAPicklist.@MoreOtherMatches , OverThreshold: payload.ns01#QASearchResult.ns01#QAPicklist.@OverThreshold): {
+			ns0#FullPicklistMoniker: payload.ns01#QASearchResult.ns01#QAPicklist.ns01#FullPicklistMoniker,
+			(payload.ns01#QASearchResult.ns01#QAPicklist.*ns01#PicklistEntry map ((picklistEntry , indexOfPicklistEntry) -> {
+				ns0#PicklistEntry @(FullAddress: picklistEntry.@FullAddress): {
+					ns0#Moniker: picklistEntry.ns01#Moniker,
+					ns0#PartialAddress: picklistEntry.ns01#PartialAddress,
+					ns0#Picklist: picklistEntry.ns01#Picklist,
+					ns0#Postcode: picklistEntry.ns01#Postcode,
+					ns0#Score: picklistEntry.ns01#Score as :string
+				}
+			})),
+			ns0#Prompt: payload.ns01#QASearchResult.ns01#QAPicklist.ns01#Prompt,
+			ns0#Total: payload.ns01#QASearchResult.ns01#QAPicklist.ns01#Total as :string
+		}
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+
+    </flow>
+    <flow name="post:/DoGetAddress:AddressValidation-config" processingStrategy="synchronous">
+		<logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <!-- <scripting:component doc:name="Groovy">
+            <scripting:script engine="Groovy"><![CDATA[throw new SocketTimeoutException();]]></scripting:script>
+        </scripting:component> -->
+        <dw:transform-message metadata:id="0818ea78-a7e3-4f39-a346-48822aff72ae" doc:name="Transform Message">
+            <dw:input-payload/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.qas.com/OnDemand-2011-03
+%namespace ns01 http://com.services.icare/AddressValidation/AddressDetailsRequest
+---
+{
+	ns0#QAGetAddress: {
+		ns0#Layout: payload.ns01#AddressDetailsRequest.ns01#Layout,
+		ns0#Moniker: payload.ns01#AddressDetailsRequest.ns01#Moniker
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+ 
+        <set-property propertyName="Auth-Token" value="d5c737f7-b5a2-4afe-91f9-a8692183984b" doc:name="Property"/>
+        <ws:consumer config-ref="Web_Service_Consumer" operation="DoGetAddress" doc:name="Web Service Consumer"/>
+        <logger message="AFTER WSC : #[payload]" level="INFO" doc:name="Logger"/>
+        <dw:transform-message metadata:id="18fa5cbf-73f2-47b2-ac75-3ff85e871092" doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.example.org/AddressDetailsResponse
+%namespace ns01 http://www.qas.com/OnDemand-2011-03
+---
+using(addressDetails = payload.ns01#Address.ns01#QAAddress.*ns01#AddressLine)
+{
+		ns0#AddressDetailsResponse: {
+			ns0#Line1: addressDetails[0].ns01#Line,
+			ns0#Line2: addressDetails[1].ns01#Line,
+			ns0#Line3: addressDetails[2].ns01#Line,
+			ns0#Suburb: addressDetails[3].ns01#Line,
+			ns0#PostCode: addressDetails[5].ns01#Line,
+			ns0#StateCode: addressDetails[4].ns01#Line,
+			ns0#Country: addressDetails[6].ns01#Line,
+			ns0#DPID: addressDetails[7].ns01#Line
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+
+        <logger message="WSC Payload : #[payload]" level="INFO" doc:name="Logger"/>
+
+
+    </flow>
+    <apikit:mapping-exception-strategy name="AddressValidation-apiKitGlobalExceptionMapping">
+        <apikit:mapping statusCode="404">
+            <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Resource not found&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="405">
+            <apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Method not allowed&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="415">
+            <apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Unsupported media type&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="406">
+            <apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Not acceptable&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="400">
+            <apikit:exception value="org.mule.module.apikit.exception.BadRequestException" />
+            <set-variable variableName="validationFailureInfo" value="#[exception.message]" doc:name="Variable"/>
+            <dw:transform-message metadata:id="a96b305f-5840-4ce5-b23b-f9d03b847c32" doc:name="Transform Message">
+                <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://com.services.icare/QASearchResponse
+%namespace ns01 http://com.services.icare/ErrorInformation
+---
+{
+	ns01#ErrorInfo: {
+		ns01#ErrorCode: 400,
+		ns01#ErrorDesc: flowVars.validationFailureInfo
+	}
+}]]></dw:set-payload>
+            </dw:transform-message>
+
+
+        </apikit:mapping>
+
+    </apikit:mapping-exception-strategy>
+<!--     <catch-exception-strategy name="AddressValidationCatch_Exception_Strategy">
+        <invoke name="BeanTestExceptionInvk" object-ref="BeanTestException" method="throwException" doc:name="BeanTestExceptionInvk"/>
+        <invoke name="beanAddressValidationExceptionInvk" object-ref="beanAddressValidationException" method="catchException" methodArguments="#[exception.getCauseException()]" doc:name="beanAddressValidationExceptionInvk"/>
+        <flow-ref name="GlobalExceptionHandlingSub_Flow" doc:name="GlobalExceptionHandlingSub_Flow"/>
+    </catch-exception-strategy> -->
+</mule>

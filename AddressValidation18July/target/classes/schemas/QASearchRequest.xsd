@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.services.icare/QAS" xmlns:tns="http://com.services.icare/QAS" elementFormDefault="qualified">
+
+
+    <complexType name="QASearch">
+    	<sequence>
+    		<element name="Country" type="string"></element>
+    		<element name="Layout" type="string"></element>
+    		<element name="Engine"> 
+    		<complexType>
+            <simpleContent>
+              <extension base="string">
+               
+                <attribute type="byte" name="Threshold"/>
+                <attribute type="string" name="Intensity"/>
+              </extension>
+            </simpleContent>
+          </complexType></element>
+    		<element name="Search" type="string"></element>
+    	</sequence>
+    	<attribute name="Localisation" type="string"></attribute>
+    </complexType>
+
+
+
+    <element name="QASearchRequest" type="tns:QASearch"></element>
+    
+
+   
+</schema>

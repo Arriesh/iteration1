@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.services.icare/AddressValidation/AddressDetailsRequest" xmlns:tns="http://com.services.icare/AddressValidation/AddressDetailsRequest" elementFormDefault="qualified">
+
+    <complexType name="AddressDetailsRequest">
+    	<sequence>
+    		<element name="Layout" type="string" minOccurs="1" maxOccurs="1"></element>
+    		<element name="Moniker" type="string" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="AddressDetailsRequest" 	type="tns:AddressDetailsRequest">
+    </element>
+
+</schema>

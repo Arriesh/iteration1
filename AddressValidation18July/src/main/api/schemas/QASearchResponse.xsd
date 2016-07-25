@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.services.icare/QASearchResponse" xmlns:tns="http://com.services.icare/QASearchResponse" elementFormDefault="qualified">
+<complexType name="QAPicklist">
+
+    	<sequence>
+    		<element name="FullPicklistMoniker" type="string"></element>
+    		<element name="PicklistEntry" type="tns:PicklistEntry"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    		<element name="Prompt" type="string"></element>
+    		<element name="Total" type="string"></element>
+    	</sequence>
+    	<attribute name="MoreOtherMatches" type="boolean"></attribute>
+    	<attribute name="OverThreshold" type="boolean"></attribute>
+    </complexType>
+
+    <complexType name="PicklistEntry">
+    	<sequence>
+    		<element name="Moniker" type="string"></element>
+    		<element name="PartialAddress" type="string"></element>
+    		<element name="Picklist" type="string"></element>
+    		<element name="Postcode" type="string"></element>
+    		<element name="Score" type="string"></element>
+    	</sequence>
+    	<attribute name="FullAddress" type="boolean"></attribute>
+    </complexType>
+    <element name="QASearchResponse" type="tns:QASearchResponse"></element>
+    
+    <complexType name="QAInformation">
+    	<sequence>
+    		<element name="StateTransition" type="string"></element>
+    		<element name="CreditsUsed" type="int"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="QASearchResponse">
+    	<sequence>
+    		<element name="QAInformation" type="tns:QAInformation"></element>
+    		<element name="QAPicklist" type="tns:QAPicklist"></element>
+    		<element name="ErrorInfo" type="tns:ErrorInfo"></element>
+    	</sequence>
+    </complexType>
+
+
+    <complexType name="ErrorInfo">
+    	<sequence>
+    		<element name="ErrorCode" type="string"></element>
+    		<element name="ErrorMessage" type="string"></element>
+    	</sequence>
+    </complexType>
+</schema>

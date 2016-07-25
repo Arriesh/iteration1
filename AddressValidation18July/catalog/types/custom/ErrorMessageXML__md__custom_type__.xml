@@ -1,0 +1,117 @@
+<custom__type__definition>
+  <version>5.2.0.0</version>
+  <typeName class="org.mule.common.metadata.DefaultMetaDataKey">
+    <id>ErrorMessageXML</id>
+    <displayName>ErrorMessageXML</displayName>
+    <category>DEFAULT</category>
+    <metaDataKeyPropertiesManager>
+      <properties>
+        <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+      </properties>
+    </metaDataKeyPropertiesManager>
+  </typeName>
+  <metadataModel class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+    <dataType>XML</dataType>
+    <metaDataModelPropertiesManager>
+      <properties>
+        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+          <typeQName>
+            <namespaceURI></namespaceURI>
+            <localPart>com.icare.commons.exceptions.ErrorMessageType</localPart>
+            <prefix></prefix>
+          </typeQName>
+        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+        <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty>
+          <exampleContent>D:\workspace\muleworkspace\AddressValidation18July\src\main\resources\com\icare\commons\xml\ErrorMessage.xml</exampleContent>
+        </org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty>
+        <org.mule.tooling.metadata.properties.DefinitionEditorModeType>
+          <mode>EXAMPLE</mode>
+          <path>src\main\resources\com\icare\commons\xml\ErrorMessage.xml</path>
+          <rootElement>com.icare.commons.exceptions.ErrorMessage</rootElement>
+        </org.mule.tooling.metadata.properties.DefinitionEditorModeType>
+      </properties>
+    </metaDataModelPropertiesManager>
+    <fields>
+      <org.mule.common.metadata.DefaultMetaDataField>
+        <name>strErrorCode</name>
+        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+          <dataType>INTEGER</dataType>
+          <metaDataModelPropertiesManager>
+            <properties>
+              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                <typeQName>
+                  <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                  <localPart>short</localPart>
+                  <prefix></prefix>
+                </typeQName>
+              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            </properties>
+          </metaDataModelPropertiesManager>
+        </model>
+        <accessType>READ_WRITE</accessType>
+        <metaDataFieldPropertyManager>
+          <properties>
+            <org.mule.common.metadata.property.QNameMetaDataProperty>
+              <name>
+                <namespaceURI></namespaceURI>
+                <localPart>strErrorCode</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.QNameMetaDataProperty>
+          </properties>
+        </metaDataFieldPropertyManager>
+      </org.mule.common.metadata.DefaultMetaDataField>
+      <org.mule.common.metadata.DefaultMetaDataField>
+        <name>strErrorDesc</name>
+        <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+          <dataType>STRING</dataType>
+          <metaDataModelPropertiesManager>
+            <properties>
+              <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                <typeQName>
+                  <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                  <localPart>string</localPart>
+                  <prefix></prefix>
+                </typeQName>
+              </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+            </properties>
+          </metaDataModelPropertiesManager>
+        </model>
+        <accessType>READ_WRITE</accessType>
+        <metaDataFieldPropertyManager>
+          <properties>
+            <org.mule.common.metadata.property.QNameMetaDataProperty>
+              <name>
+                <namespaceURI></namespaceURI>
+                <localPart>strErrorDesc</localPart>
+                <prefix></prefix>
+              </name>
+            </org.mule.common.metadata.property.QNameMetaDataProperty>
+          </properties>
+        </metaDataFieldPropertyManager>
+      </org.mule.common.metadata.DefaultMetaDataField>
+    </fields>
+    <rootElement>
+      <namespaceURI></namespaceURI>
+      <localPart>com.icare.commons.exceptions.ErrorMessage</localPart>
+      <prefix></prefix>
+    </rootElement>
+    <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+      <schemas>
+        <string>&lt;xs:schema attributeFormDefault=&quot;unqualified&quot; elementFormDefault=&quot;qualified&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xd;
+  &lt;xs:element name=&quot;com.icare.commons.exceptions.ErrorMessage&quot; type=&quot;com.icare.commons.exceptions.ErrorMessageType&quot;/&gt;&#xd;
+  &lt;xs:complexType name=&quot;com.icare.commons.exceptions.ErrorMessageType&quot;&gt;&#xd;
+    &lt;xs:sequence&gt;&#xd;
+      &lt;xs:element type=&quot;xs:short&quot; name=&quot;strErrorCode&quot;/&gt;&#xd;
+      &lt;xs:element type=&quot;xs:string&quot; name=&quot;strErrorDesc&quot;/&gt;&#xd;
+    &lt;/xs:sequence&gt;&#xd;
+  &lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+      </schemas>
+      <encoding>UTF-8</encoding>
+    </schemas>
+    <namespaceManager>
+      <namespacePrefix/>
+    </namespaceManager>
+  </metadataModel>
+</custom__type__definition>

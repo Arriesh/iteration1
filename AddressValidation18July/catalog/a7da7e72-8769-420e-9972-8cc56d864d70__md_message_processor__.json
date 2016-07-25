@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "ErrorMessageMap"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "ErrorMessageXSD"
+        }
+    },
+    "id": "a7da7e72-8769-420e-9972-8cc56d864d70",
+    "version": "5.2.0.0"
+}

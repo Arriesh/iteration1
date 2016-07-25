@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.icare.commons.exceptions.ErrorMessage>
+   <strErrorCode>500</strErrorCode>
+   <strErrorDesc>External System Exception : Target system not accessible</strErrorDesc>
+</com.icare.commons.exceptions.ErrorMessage>

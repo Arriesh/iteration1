@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/AddressDetailsResponse" xmlns:tns="http://www.example.org/AddressDetailsResponse" elementFormDefault="qualified">
+
+    <complexType name="AddressDetailsResponse">
+    	<sequence>
+    		<element name="Line1" type="string"></element>
+    		<element name="Line2" type="string"></element>
+    		<element name="Line3" type="string"></element>
+    		<element name="Suburb" type="string"></element>
+    		<element name="PostCode" type="string"></element>
+    		<element name="StateCode" type="string"></element>
+    		<element name="Country" type="string"></element>
+    		<element name="DPID" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="AddressDetailsResponse"
+    	type="tns:AddressDetailsResponse">
+    </element>
+</schema>

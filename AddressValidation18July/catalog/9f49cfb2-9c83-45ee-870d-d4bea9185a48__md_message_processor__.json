@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "QASDoGetAddressRes"
+        }
+    },
+    "id": "9f49cfb2-9c83-45ee-870d-d4bea9185a48",
+    "version": "5.2.0.0"
+}

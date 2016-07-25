@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "ErrorMessage"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Web_Service_Consumer",
+            "typeId": "QAGetAddress"
+        }
+    },
+    "id": "00c7575f-bc4d-440f-be0a-0392db6e8e8a",
+    "version": "5.2.0.0"
+}
